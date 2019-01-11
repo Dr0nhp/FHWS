@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Uebung4</title>
+</head>
+<body>
+</body>
+<script>
+
+
+//Konstruktor
+function Adresse(PLZ,STR,HNR){
+    this.PLZ = PLZ;
+    this.STR = STR;
+    this.HNR = HNR;
+    
+    Strasse = function (){
+        return this.STR + " " + this.HNR
+    }
+}
+
+//Factory Bla
+/*
+var Postbote = function(name){
+    var Postbote = {};
+    Postbote.name = name;
+    Postbote.austragen = function(){
+        console.log(this.name + " trägt Briefe aus");
+    }
+    return Postbote;
+};
+*/
+Adresse.prototype.getPLZ = function() {
+    return this.PLZ;
+}
+
+var var1 = new Adresse(66123,"Waldhausweg",15);
+
+const var2 = Object.assign(var1, {name: "Peter", uhrzeit: 5});
+
+console.log(var1);
+console.log(var2);
+console.log(var2.getPLZ());
+
+</script>

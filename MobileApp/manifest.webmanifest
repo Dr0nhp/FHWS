@@ -1,0 +1,15 @@
+{
+  "background_color": "black",
+  "description": "Just some random Webapp",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon/diamond.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ],
+  "name": "Awesome!",
+  "short_name": "AWSM!",
+  "start_url": "/uebung26/index.html"
+}
